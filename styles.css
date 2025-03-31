@@ -33,3 +33,78 @@ img {
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+header {
+    background-image: url("assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding: 1rem 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    color: var(--white);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link.logo {
+    font-weight: 600;
+}
+
+.social__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social__icons span {
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link:hover,
+.social__icons span:hover {
+  color: var(--primary-color);
+}
+
+.header__container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: calc(700px - 60px);
+}
+
+.header__content {
+    text-align: center;
+    color: var(--white);
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.header__content h1 {
+    font-size: 10rem;
+    line-height: 8rem;
+}
+
+.header__content p {
+    letter-spacing: 2px;
+}
