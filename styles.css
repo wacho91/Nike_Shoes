@@ -381,3 +381,27 @@ nav {
 .gallery__image img {
     display: flex;
 }
+
+.brands__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.brand__image {
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    background-color: var(--white);
+}
+
+.brand__image img {
+    opacity: 0.5;
+    max-width: 120px;
+    transition: 0.3s;
+}
+
+.brand__image:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
