@@ -348,3 +348,36 @@ nav {
     font-family: var(--font-heading);
     font-style: italic;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery__image {
+    position: relative;
+    isolation: isolate;
+}
+
+.gallery__image::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: var(--text-dark);
+    opacity: 0.5;
+    z-index: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery__image:hover::before {
+    opacity: 0;
+}
+
+.gallery__image:last-child {
+    display: none;
+}
+
+.gallery__image img {
+    display: flex;
+}
