@@ -480,3 +480,14 @@ footer {
     gap: 1rem;
     font-size: 1.2rem;
 }
+
+@media (width < 1200px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .header__content h1 {
+        font-size: 8rem;
+        line-height: 6.5rem;
+    }
+}
