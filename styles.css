@@ -491,3 +491,37 @@ footer {
         line-height: 6.5rem;
     }
 }
+
+@media (width < 900px) {
+    .link:not(.logo) {
+        display: none;
+    }
+
+    .service__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collection__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .collection__banner {
+        grid-area: 3/1/4/3;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery__image:last-child {
+        display: flex;
+    }
+
+    .brands__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
