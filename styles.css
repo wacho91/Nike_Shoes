@@ -525,3 +525,42 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+@media (width < 600px) {
+    .header__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header__container h1 {
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    .service__card {
+        padding: 1rem;
+    }
+
+    .collection__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection__banner {
+        grid-area: 5/1/6/3;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery__image:last-child {
+        display: none;
+    }
+
+    .brands__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
